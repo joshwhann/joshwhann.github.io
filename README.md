@@ -1,4 +1,0 @@
-whanncons
-=========
-
-Icon Set
