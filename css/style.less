@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/Proxima-Nova/regular/proxima_nova_reg-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Proxima-Nova/regular/proxima_nova_reg-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Proxima-Nova/regular/proxima_nova_reg-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Proxima-Nova/regular/proxima_nova_reg-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Proxima-Nova/regular/proxima_nova_reg-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@blue: #6abff0;
+@dark: #282e37;
+
+.container{
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, #71bded, #64e18d);
+	background-size: 400% 400%;
+	-webkit-animation: AnimationName 6s ease infinite;
+	-moz-animation: AnimationName 6s ease infinite;
+	-o-animation: AnimationName 6s ease infinite;
+	animation: AnimationName 6s ease infinite;
+	@-webkit-keyframes AnimationName {
+	    0%{background-position:50% 0%}
+	    50%{background-position:51% 100%}
+	    100%{background-position:50% 0%}
+	}
+	@-moz-keyframes AnimationName {
+	    0%{background-position:50% 0%}
+	    50%{background-position:51% 100%}
+	    100%{background-position:50% 0%}
+	}
+	@-o-keyframes AnimationName {
+	    0%{background-position:50% 0%}
+	    50%{background-position:51% 100%}
+	    100%{background-position:50% 0%}
+	}
+	@keyframes AnimationName {
+	    0%{background-position:50% 0%}
+	    50%{background-position:51% 100%}
+	    100%{background-position:50% 0%}
+	}
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	section{
+		width: 60%;
+		margin: 0 auto;
+		color: #fff;
+		text-align: center;
+		@media screen and (max-width: 1024px) {
+			width: 80%;
+		}
+		@media screen and (max-width: 570px) {
+			width: 90%;
+		}
+		img{
+			margin-top: 100px;
+			width: 150px;
+			padding-bottom: 40px;
+			@media screen and (max-width: 570px) {
+				margin-top: 30px;
+				width: 130px;
+				padding-bottom: 10px;
+			}
+		}
+		h1{
+			font-family: 'Proxima Nova', sans-serif;
+			font-size: 50px;
+			font-weight: 500;
+			line-height: 50px;
+			margin-top: 30px;
+			margin-bottom: 0;
+			@media screen and (max-width: 570px) {
+				margin-top: 25px;
+				font-size: 25px;
+				line-height: 35px;
+			}
+		}
+		p{
+			font-family: 'Proxima Nova';
+			line-height: 25px;
+			font-size: 18px;
+			@media screen and (max-width: 570px) {
+				font-size: 14px;
+				line-height: 23px;
+			}
+		}
+		
+		a{
+			font-family: 'Chaparral Pro It', serif;
+			border-bottom: 2px solid @blue;
+			color: #fff;
+			text-decoration: none;
+			transition: 0.3s ease;
+		}
+		a:hover{
+			border-bottom: 4px solid @blue;
+		}
+	}
+	footer{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		.footer{
+			width: 60%;
+			margin: 0 auto;
+			color: #fff;
+			font-size: 13px;
+			@media screen and (max-width: 570px) {
+				display: none;
+			}
+			.left{
+				display: inline-block;
+				vertical-align: top;
+				width: 49.5%;
+				box-sizing: border-box;
+				text-align: left;
+			}
+			.right{
+				display: inline-block;
+				vertical-align: top;
+				width: 49.5%;
+				box-sizing: border-box;
+				text-align: right;
+			}
+			a{
+				color: #fff;
+				text-decoration: none;
+				border-bottom: 1px solid #fff;
+			}
+		}
+		
+	}
+}
+
+
+#mc_embed_signup{
+	width: 250px;
+	margin: 0 auto;
+	margin-top: 40px;
+	font:14px "Proxima Nova",sans-serif; 
+	color: #fff;
+	#mc_embed_signup_scroll{
+		text-align: center;
+		font-weight: 100;
+		#mce-EMAIL{
+			margin: 0 auto;
+			width: 250px;
+			margin-bottom: 10px;
+			color: @dark;
+			outline: none;
+			border-radius: 3px;
+		}
+		#mc-embedded-subscribe{
+			margin: 0 auto;
+			width: 250px;
+			border-radius: 3px;
+			transition: 0.3s;
+			background-color: rgba(255, 255, 255, 0);
+			color: #fff;
+			border: 1px solid #fff;
+			outline: none;
+		}
+		#mc-embedded-subscribe:hover{
+			color: #fff;
+			border: 1px solid #3c9ee2;
+			background-color: #3c9ee2;
+		}
+	}
+}
